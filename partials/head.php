@@ -6,10 +6,18 @@
     <meta name="description" content="invitaciones digitales para eventos">
     <meta name="keywords" content="invitaciones, digitales, tarjetas, boda, invitación, interactivas, casamiento, save the date, agenda la fecha, ideas invitación, tarjetas de 15, tarjetas eventos, wedding, matrimonio, ideas tarjetas, rsvp, modelos de invitacion, página de boda, página web de casamiento">
 
+    <!-- Tailwind (para el sobre de apertura) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Desactivar Preflight para no pisar estilos de Bootstrap
+        tailwind.config = { corePlugins: { preflight: false } };
+    </script>
+
     <!-- Listado de css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

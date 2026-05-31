@@ -2,6 +2,9 @@
 $evento = [
     'titulo'              => 'Boda Flor y Joaco',
     'titulo_evento'       => 'Boda Flor y Joaco',
+    'novios'              => 'Flor &amp; Joaco',
+    'portada_sobre'       => 'https://res.cloudinary.com/dvbhqr8nu/image/upload/v1776090541/momentia/events/cmnvismw000015u5bgf3yvwmi/portada/qyuf21yemu1dzqh3pclz.jpg',
+    'sello_sobre'         => 'https://res.cloudinary.com/dvbhqr8nu/image/upload/v1775942740/momentia/compositions/sobre/iw5xpmo9brtliqabvhle.png',
     'fecha_inicio'        => '11/22/2026 19:00:00',
     'fecha_fin'           => '11/22/2026 23:59:00',
     'instagram_handle'    => '@bodafloryjoaco',
