@@ -1,0 +1,622 @@
+<!-- Configuraciones generales -->
+
+<!-- Config Home -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Head -->
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description" content="Agenda la fecha - Home">
+<meta name="keywords" content="Agenda, la, fecha, invitaciones, digitales">
+
+
+<meta name="p:domain_verify" content="cd25a71038418add1267c6f476004093"/>
+
+<title>Invitaciones Digitales Agendá la Fecha</title>
+
+
+
+<!-- Listado de css con version dinamica segun modificacion de archivo -->
+<link rel='stylesheet' href='https://agendalafecha.com/public/css/bootstrap.min.css?v=1597406985'/><link rel='stylesheet' href='https://agendalafecha.com/public/css/simplePagination.css?v=1597406985'/><link rel='stylesheet' href='https://agendalafecha.com/public/css/agenda.css?v=1700281789'/>
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
+
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWZWKDN9');</script>
+<!-- End Google Tag Manager -->
+ 
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWZWKDN9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <!-- Header -->
+   <header class="fixed-top">
+
+   <div class="container">
+     <div class="row">
+
+
+
+       <!-- Logo -->
+       <div class="col-md-3 col-logo">
+
+         <!-- Logo -->
+         <a href="https://agendalafecha.com/">
+           <img src="https://agendalafecha.com/public/img/logo-black.svg" alt="Invitaciones Digitales Agenda la fecha" title="Invitaciones Digitales Agenda la fecha">
+         </a>
+
+
+         <!-- Boton par abrir el menu mobile -->
+         <a id="boton-menu-mobile">
+           <i class="fas fa-bars"></i>
+         </a>
+
+       </div>
+
+
+
+
+
+
+
+       <!-- Menu -->
+       <div class="col-md-7 col-menu">
+         <ul id="menu" class="menu d-flex flex-column flex-md-row justify-content-end align-items-center">
+
+
+           
+             <li><a href="https://agendalafecha.com/">Inicio</a></li>
+             <!-- <li><a class="smoth-scroll" href="#invitaciones">Invitaciones</a></li> -->
+             
+             <li class="nav-item dropdown submenu-invitaciones">
+               <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 Invitaciones
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/clasica/">Clásica</a>
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/premium/">Premium</a>
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/black/">Black</a>
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/romantica/">Romántica</a>
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/vintage/">Vintage</a>
+                 <a class="dropdown-item" href="https://www.agendalafecha.com/invitaciones/demo15/">15 años</a>
+               </div>
+             </li>
+
+             <li><a href="https://agendalafecha.com/invitaciones-digitales-15">QUINCE AÑOS</a></li>
+             <li><a href="https://agendalafecha.com/blog">Blog</a></li>
+             <li><a class="smoth-scroll" href="#contacto">Contacto</a></li>
+
+
+           
+
+           <!-- Si no estoy en home -->
+           
+         </ul>
+       </div>
+
+
+
+       
+
+
+     </div>
+   </div>
+
+ </header>
+
+  <!-- Portada -->
+  <section class="portada">
+
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+
+
+      <!-- Bloque info centrado -->
+      <div class="info-portada">
+
+        <!-- Logo portada -->
+        <img src="https://agendalafecha.com/public/img/logo-portada.svg" alt="Invitaciones Digitales Agenda la fecha" title="Invitaciones Digitales Agenda la fecha" class="logo-portada">
+
+        <h1>Invitaciones digitales <br>de boda</h1>
+  <p> ¡Tu día más especial merece una invitación única!<br>
+      Invitaciones únicas con diseño personalizado 💕<br>
+Compartir tu invitación con tus seres queridos es tan simple como enviar un enlace. <br>¡Conocé nuestros modelos!
+</p>
+
+        <a href="#invitaciones" class="boton smoth-scroll">Ver invitaciones</a>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Presentacion 1 -->
+  <section class="presentacion-1">
+  <div class="container">
+    <div class="row">
+
+
+      <!-- Texto -->
+      <div class="col-md-5 info">
+
+        <h3>TU BODA ES ÚNICA,</BR>
+        TU INVITACIÓN TAMBIÉN</h3>
+
+        <p>
+          Reemplazá la tarjeta de papel tradicional con nuestras invitaciones digitales
+          Agendá la Fecha ®. <br>
+  
+          Elegí el modelo que más te guste, ¡nosotros lo personalizamos con tu diseño ideal!<br>
+         Una vez lista, podés compartirla por WhatsApp, email o redes. ¡Tus invitados acceden a toda la información en un click!
+        </p>
+
+   
+
+         <a href="#invitaciones" class="boton verde">Ver invitaciones</a>
+
+
+
+
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-md-7">
+
+        <img src="https://agendalafecha.com/public/img/presentacion-1.png" alt="Invitaciones Digitales Agenda la fecha" title="Invitaciones Digitales Agenda la fecha" class="img-fluid">
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Caracteristicas -->
+  <section class="caracteristicas">
+  <div class="container">
+ 
+       <h2>Funcionalidades de nuestras invitaciones </h2>
+    
+</br>
+   <div class="row">
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-rsvp.svg" alt="">
+        <h5>rsvp</h5>
+        <p>Confirmacion de</br>
+asistencia online</p>
+      </div>
+
+
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-mapa.svg" alt="">
+        <h5>GPS</h5>
+        <p>Indicaciones para</br>
+llegar al evento con</br>
+Maps</p>
+      </div>
+
+            <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-regalo.svg" alt="">
+        <h5>REGALOS</h5>
+        <p>Info de tu lista de</BR>
+regalos, cuenta</BR>
+bancaria, etc</p>
+      </div>
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-galeria-fotos.svg" alt="">
+        <h5>ÁLBUM DE FOTOS</h5>
+        <p>Las fotos que
+marcaron tu</br>
+historia </p>
+      </div>
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-instagram.svg" alt="">
+        <h5>INSTAGRAM WALL</h5>
+        <p>Agregá el </br>
+        instagram de tu boda</p>
+      </div>
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-canciones.svg" alt="">
+        <h5>PLAYLIST</h5>
+        <p>Sugerencias</BR>
+        de Canciones</p>
+      </div>
+
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-agendar.svg" alt="">
+        <h5>AGENDAR</h5>
+        <p>Para que tus</BR>
+invitados agenden</BR>
+en su calendario</p>
+      </div>
+
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-musica.svg" alt="">
+        <h5>MÚSICA</h5>
+        <p>Tu canción favorita,</BR>
+sonando de fondo</p>
+      </div>
+
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-dresscode.svg" alt="">
+        <h5>DRESS CODE</h5>
+        <p>Info de vestimenta</br>
+          para tus invitados</p>
+      </div>
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-idioma.svg" alt="">
+        <h5>MULTI IDIOMA</h5>
+        <p>Opción de traducir</br>
+          a otros idiomas</p>
+      </div>
+
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-lista.svg" alt="">
+        <h5>LISTA FICTICIA</h5>
+        <p>Una forma original de</BR>
+sugerir regalos!</p>
+      </div>
+
+            <!-- Item -->
+      <div class="col-6 col-md-3 item">
+        <img src="https://agendalafecha.com/public/img/iconos/iconos-info.svg" alt="">
+        <h5>INFO ÚTIL</h5>
+        <p>Datos sobre</BR>
+hospedajes,</BR>
+traslados, etc.</p>
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Banner 1 -->
+  <section class="banner-1">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+
+      <div class="info-banner text-center">
+        <img src="https://agendalafecha.com/public/img/iconos/icono-corazon.svg" alt="">
+        <p>Sabemos que cada evento es único, por eso te ofrecemos un diseño personalizado <br>
+          y flexible adaptado a los requerimientos de cada pareja</p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Modelos-->
+  <section class="modelos" id="invitaciones">
+  <div class="container">
+    <div class="row">
+
+      <!-- Modelo Black-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/black/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-black.png" alt="invitacion-black">
+        </a>
+
+        <h2>Invitación Black</h2>
+        <p>
+        La opción más completa,   </br>
+incluye Dress Code,</br>
+Instagram Wall, Sugerencia</br>
+de canciones y más!
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/black/" class="boton verde">Ver Black</a>
+
+      </div>
+      <!-- /modelo -->
+
+      <!-- Modelo Premium-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/premium/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-premium.png" alt="invitacion-premium">
+        </a>
+
+        <h2>Invitación Premium</h2>
+        <p>
+          Todas las funciones</br>
+básicas + cuenta regresiva</br>
+y álbum con hasta 10 fotos</br>
+de la pareja
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/premium/" class="boton verde">Ver Premium</a>
+
+      </div>
+      <!-- /modelo -->
+
+      <!-- Modelo Clasica-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/clasica/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-clasica.png" alt="invitacion-clasica">
+        </a>
+
+        <h2>Invitación Clásica</h2>
+        <p>
+          Las funciones básicas:</br>
+• RSVP online</br>
+• Fotos de la pareja</br>
+• Info regalos
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/clasica/" class="boton verde">Ver Clásica</a>
+
+      </div>
+      <!-- /modelo -->
+
+      <!-- Modelo Vintage-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/vintage/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-vintage.png" alt="invitacion-vintage">
+        </a>
+
+        <h2>Invitación Vintage</h2>
+        <p>
+          Opción muy completa, su</br>
+toque distintivo es su</br>
+diseño, iconografía y cuenta</br>
+regresiva!
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/vintage/" class="boton verde">Ver Vintage</a>
+
+      </div>
+      <!-- /modelo -->
+
+      <!-- Modelo Romantica-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/romantica/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-romantica.png" alt="invitacion-romantica">
+        </a>
+
+        <h2>Invitación Romántica</h2>
+        <p>
+         Invitación completa con</br>
+diseño romántico que</br>
+pone énfasis en las</br>
+fotografías.
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/romantica/" class="boton verde">Ver Romántica</a>
+
+      </div>
+      <!-- /modelo -->
+
+      <!-- Modelo 15-->
+      <div class="col-md-4 text-center modelo">
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/demo15/">
+          <img class="img-fluid" src="https://agendalafecha.com/public/img/agenda-la-fecha-Demo-15.png" alt="invitacion-15">
+        </a>
+
+        <h3>Invitación 15 años</h3>
+        <p>
+         Todas las funcionalidades</br>
+para compartir los</br>
+detalles de tu fiesta de 15</br>
+con todos tus amigos!
+        </p>
+
+        <a target="_blank" href="https://www.agendalafecha.com/invitaciones/demo15/" class="boton rosa">Ver Demo 15</a>
+
+      </div>
+      <!-- /modelo -->
+
+    </div>
+  </div>
+</section>
+
+  <!-- Banner 2 -->
+  <section class="banner-2">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+
+      <div class="info-banner text-center">
+<h3>PERSONALIZAMOS TU INVITACIÓN DE ACUERDO A TUS GUSTOS</h3>
+
+          <p>Utilizando la estructura del demo que elijas la diseñamos a medida de tus gustos (portada, colores, redacción de textos, imágenes). Contamos con un amplio catálogo con más de 80 diseños para personalizar tu invitación 🎨</p>
+
+          <div class="text-center">
+            <a target="_blank" href="https://wa.me/+5493518115010/?text=Hola!%20Quiero%20más%20info%20sobre%20las%20invitaciones%20digitales" class="boton verde">¡Quiero conocer más!</a>
+          </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+  <!-- Contactos -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="row">
+
+        <!-- Col 1 -->
+        <div class="col-md-6 contacto-item">
+
+          <h4>¡Contactanos!</h4>
+          <p>¡Escribinos o llamanos para recibir asesoramiento personalizado! <br>
+            Trabajamos desde Argentina y Uruguay al mundo</p>
+          <ul>
+            <li><i class="fas fa-phone-alt"></i> +549 351 8754822 | +549 351 8115010</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:agendalafecha@gmail.com">agendalafecha@gmail.com</a> </li>
+          </ul>
+
+
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-md-6 contacto-item">
+
+          <h4>Seguinos en redes</h4>
+          <p>Encontranos en las redes para seguir todas nuestras novedades.</p>
+          <ul>
+            <li><i class="fab fa-facebook-square"></i> <a target="_blank" href="https://www.facebook.com/agendalafecha/">Agendá La Fecha</a> </li>
+            <li><i class="fab fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/agendalafecha/">agendalafecha</a> </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Whatsapp -->
+    <a target="_blank" href="" class="whatsapp-link whatsapp-fixed"><i class="fab fa-whatsapp"></i></a>
+
+  </section>
+
+  <div class="footer">
+    <p>
+      Agendá la fecha &reg; - Todos los derechos reservados.
+    </p>
+  </div>
+
+</footer>
+
+  <!-- Scripts -->
+  <script>
+  // Consulto tipo de dispositivo
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+    var device = 'mobile';
+    var pahWP = 'api';
+  } else {
+    var device = 'desktop';
+    var pahWP = 'web';
+  }
+</script>
+
+<script type='text/javascript' src='https://agendalafecha.com/public/js/jquery-3.5.1.min.js?v=1597407005'></script><script type='text/javascript' src='https://agendalafecha.com/public/js/popper.min.js?v=1597407006'></script><script type='text/javascript' src='https://agendalafecha.com/public/js/bootstrap.min.js?v=1597407004'></script><script type='text/javascript' src='https://agendalafecha.com/public/js/parallax.min.js?v=1597407006'></script><script type='text/javascript' src='https://agendalafecha.com/public/js/jquery.simplePagination.js?v=1597407006'></script><script type='text/javascript' src='https://agendalafecha.com/public/js/agenda.js?v=1595948013'></script>
+
+<script>
+  // Menu Mobile
+  $(document).ready(function() {
+
+    $("#boton-menu-mobile").click(function(e) {
+
+      e.preventDefault();
+
+      $('.col-menu').toggle();
+
+    });
+
+  });
+</script>
+
+
+<script>
+  //  Parallax banner 1
+  $('.banner-1').parallax({
+    imageSrc: 'public/img/banner-1.jpg'
+  });
+</script>
+
+<script>
+  //  Parallax banner 2
+  $('.banner-2').parallax({
+    imageSrc: 'public/img/banner-2.jpg'
+  });
+</script>
+
+
+
+<!-- Whatsapp path -->
+<script>
+  $(document).ready(function() {
+
+    var wpMessage = '¡Hola! Quisiera información acerca de las tarjetas';
+
+    // Cambio el path del link WP:
+    $("a.whatsapp-link").attr("href", "https://" + pahWP + ".whatsapp.com/send?phone=5493518754822&text=" + wpMessage);
+
+  });
+</script>
+
+
+<!-- Smoth scroll -->
+<script>
+  $('a.smoth-scroll').on("click", function(e) {
+    var anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(anchor.attr('href')).offset().top - 50
+    }, 1000);
+    e.preventDefault();
+  });
+</script>
+
+
+</body>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'p3plmcpnl504514'},{'dcenter':'p3'},{'cp_id':'3446280'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
