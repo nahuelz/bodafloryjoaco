@@ -4,7 +4,7 @@
 <?php include __DIR__ . '/partials/head.php'; ?>
 
 <body>
-<div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 404px; width: 1905px;"><img class="parallax-slider" src="./assets/img/portada.jpg" style="transform: translate3d(0px, -333px, 0px); position: absolute; height: 1071px; width: 1905px; max-width: none;"></div>
+<div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 404px; width: 1905px;"><img class="parallax-slider" src="assets/img/portada.jpg" style="transform: translate3d(0px, -333px, 0px); position: absolute; height: 1071px; width: 1905px; max-width: none;"></div>
 <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden;"><img class="parallax-slider" src="./assets/img/moscu.jpg"></div>
 
 <?php include __DIR__ . '/partials/audio.php'; ?>
