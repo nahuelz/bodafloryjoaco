@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #000;
+}
+
+/* Audio */
+.audio {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.botonAudio-container {
+    text-align: right;
+}
+
+.botonAudio {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.botonAudio:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.vertical_shake {
+    animation: verticalShake 2s infinite;
+}
+
+@keyframes verticalShake {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Portada */
+.portada {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.nombres-novios {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.scroll-down::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% { top: 10px; opacity: 1; }
+    100% { top: 30px; opacity: 0; }
+}
+
+/* Cuenta Regresiva */
+.cuenta-regresiva {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cuenta-regresiva p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.num_cuenta {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #d4af37;
+}
+
+.text_cuenta {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.margenSup {
+    margin-top: 2rem;
+}
+
+/* Ceremonia y Fiesta */
+.ceremonia-fiesta {
+    background: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.columna {
+    text-align: center;
+    padding: 2rem;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.animated h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.animated p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #d4af37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-alt {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+}
+
+.btn-alt:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* Galería */
+.galeria {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.title-galery {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #d4af37;
+}
+
+.item-galeria {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.item-galeria:hover img {
+    transform: scale(1.1);
+}
+
+/* CBU */
+.cbu {
+    background: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cbu .icon {
+    width: 100px;
+    height: 100px;
+}
+
+.cbu p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hidden-cbu {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+#hidden-cbu .title {
+    display: block;
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+#hidden-cbu ul {
+    list-style: none;
+    text-align: left;
+}
+
+#hidden-cbu li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+/* Instagram */
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.instagram .contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hashtag {
+    font-size: 2rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Dress Code */
+.dresscode {
+    background: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.dresscode h4 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin: 1rem 0;
+}
+
+/* Confirmar Asistencia */
+.parallax-confirmar {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519225421980-715cb0212128?w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.divTitleAgenda h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.divAgenda {
+    margin-top: 3rem;
+}
+
+.dropdown-toggle {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dropdown-menu {
+    background: #1a1a1a;
+    border: 1px solid #d4af37;
+}
+
+.dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* Canciones */
+.canciones {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.canciones h4 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin: 1rem 0;
+}
+
+/* Alojamientos */
+.alojamientos {
+    background: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.alojamientos h4 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+#hidden-alojamientos {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#hidden-alojamientos .title {
+    display: block;
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin: 1.5rem 0 1rem 0;
+}
+
+#hidden-alojamientos ul {
+    list-style: none;
+}
+
+#hidden-alojamientos li {
+    padding: 0.5rem 0;
+}
+
+#hidden-alojamientos a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+/* Gracias */
+.gracias {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.gracias p {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+/* Animaciones */
+.animated {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.opacidad {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.opacidad.visible {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nombres-novios {
+        font-size: 3rem;
+    }
+    
+    .num_cuenta {
+        font-size: 2rem;
+    }
+    
+    .columna {
+        margin-bottom: 2rem;
+    }
+    
+    .title-galery {
+        font-size: 1.8rem;
+    }
+    
+    .divTitleAgenda h4 {
+        font-size: 1.8rem;
+    }
+}

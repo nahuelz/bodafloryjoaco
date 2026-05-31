@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Invitación digital para la boda de Joaco y Flor">
+    <meta name="keywords" content="invitaciones, boda, Joaco y Flor, casamiento">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <title>Joaco & Flor - Nuestra Boda</title>
+</head>
+<body>
+    <!-- Audio -->
+    <section class="audio">
+        <div class="container">
+            <div class="row">
+                <div class="botonAudio-container">
+                    <audio id="audioPrueba" loop>
+                        <source src="assets/musica.mp3" type="audio/mp3">
+                    </audio>
+                    <div class='animation'>
+                        <img id="btnPlay" src="assets/img/icono-musica_play.svg" alt="boton play" onclick="playAudio()" class="botonAudio vertical_shake">
+                        <img id="btnPausa" src="assets/img/icono-musica_pausa.svg" class="botonAudio hidden" onclick="pauseAudio()" alt="boton pausa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portada -->
+    <section class="portada parallax-portada d-flex justify-content-center align-items-center">
+        <div class="logo-portada fade-in-portada">
+            <h1 class="nombres-novios">Joaco & Flor</h1>
+            <div class="scroll-down"></div>
+        </div>
+    </section>
+
+    <!-- Cuenta Regresiva -->
+    <section class="cuenta-regresiva" id="cuenta-regresiva">
+        <div class="container">
+            <p class="m-3">Bienvenidos a nuestra boda</p>
+            <p id="reloj" class="descartar">¡Hoy es el gran día!</p>
+            <div class="row justify-content-center margenSup" id="reloj_number">
+                <div class="col-md-1 col-2 d-flex flex-column justify-content-center p-0">
+                    <p class="num_cuenta" id="dias"></p>
+                    <p class="text_cuenta">días</p>
+                </div>
+                <p class="num_cuenta">:</p>
+                <div class="col-md-1 col-2 d-flex flex-column justify-content-center p-0">
+                    <p class="num_cuenta" id="horas"></p>
+                    <p class="text_cuenta">hs</p>
+                </div>
+                <p class="num_cuenta">:</p>
+                <div class="col-md-1 col-2 d-flex flex-column justify-content-center p-0">
+                    <p class="num_cuenta" id="min"></p>
+                    <p class="text_cuenta">min</p>
+                </div>
+                <p class="num_cuenta">:</p>
+                <div class="col-md-1 col-2 d-flex flex-column justify-content-center p-0">
+                    <p class="num_cuenta" id="seg"></p>
+                    <p class="text_cuenta">seg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ceremonia y Fiesta -->
+    <section class="ceremonia-fiesta mb-5">
+        <div class="container">
+            <div class="row">
+                <!-- Ceremonia -->
+                <div class="col-md-6 columna iconoCeremonia">
+                    <img src="assets/img/icono-ceremonia.svg" alt="" class="icon ceremonia">
+                    <div class="animated divCeremonia">
+                        <h4>Ceremonia</h4>
+                        <p>
+                            [FECHA]</br>
+                            [HORA] hs </br>
+                            [LUGAR CEREMONIA]</br>
+                            [CIUDAD]</br>
+                            Recibí debajo las indicaciones para llegar.
+                        </p>
+                        <a target="_blank" href="[ENLACE MAPA CEREMONIA]" class="btn">LLEGAR A LA CEREMONIA</a>
+                    </div>
+                </div>
+                <!-- Fiesta -->
+                <div class="col-md-6 columna iconoCeremonia">
+                    <img src="assets/img/icono-fiesta.svg" alt="" class="icon fiesta">
+                    <div class="animated divFiesta">
+                        <h4>Fiesta</h4>
+                        <p>
+                            Después de la ceremonia</br>
+                            [LUGAR FIESTA]</br>
+                            [CIUDAD]</br>
+                            ¡Te esperamos!
+                        </p>
+                        <a target="_blank" href="[ENLACE MAPA FIESTA]" class="btn">LLEGAR A LA FIESTA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria">
+        <div class="container">
+            <h4 class="title-galery">NOSOTROS...</h4>
+            <div class="row">
+                <div class="col-6 col-md-3 item-galeria animated opacidad">
+                    <a href="assets/img/galeria/1.jpg" data-fancybox="images">
+                        <img class="img-fluid" src="assets/img/galeria/1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 item-galeria animated opacidad">
+                    <a href="assets/img/galeria/2.jpg" data-fancybox="images">
+                        <img class="img-fluid" src="assets/img/galeria/2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 item-galeria animated opacidad">
+                    <a href="assets/img/galeria/3.jpg" data-fancybox="images">
+                        <img class="img-fluid" src="assets/img/galeria/3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 item-galeria animated opacidad">
+                    <a href="assets/img/galeria/4.jpg" data-fancybox="images">
+                        <img class="img-fluid" src="assets/img/galeria/4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CBU -->
+    <section class="cbu">
+        <div class="container">
+            <img src="assets/img/icono-regalo.svg" alt="" class="icon regalo">
+            <div class="animated divCbu">
+                <p>Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...</p>
+                <a data-fancybox data-src="#hidden-cbu" href="javascript:;" class="btn btn-alt">Ver Datos Bancarios</a>
+                <div style="display: none;" id="hidden-cbu">
+                    <span class="title">Datos Bancarios</span>
+                    <ul>
+                        <li>Nombre del Titular: Joaco [Apellido] / Flor [Apellido]</li>
+                        <li>CBU: [TU CBU]</li>
+                        <li>Alias: [TU ALIAS]</li>
+                        <li>DNI: [TU DNI]</li>
+                        <li>[TU BANCO]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram">
+        <div class="contenido">
+            <img src="assets/img/icono-instagram.svg" alt="" class="icon iconInstagram">
+            <div class="animated divIntagram">
+                <span class="hashtag">@joacoyflor</span>
+                <p>
+                    ¡Preparate para nuestro gran día!<br>
+                    Ya podés seguirnos en nuestra cuenta para ver todas las novedades del casamiento.
+                </p>
+                <a target="_blank" href="https://www.instagram.com/joacoyflor" class="btn">Ver en Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section class="dresscode">
+        <div class="container animated divDressCode">
+            <img src="assets/img/icono-dresscode.svg" alt="" class="icon">
+            <h4>DRESS CODE</h4>
+            <p>[TU DRESS CODE]</p>
+        </div>
+    </section>
+
+    <!-- Confirmar Asistencia -->
+    <section class="parallax-confirmar confirmar d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="animated divTitleAgenda">
+                <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
+                <p>Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
+                <a target="_blank" href="[ENLACE GOOGLE FORMS]" class="btn">Confirmar asistencia</a>
+            </div>
+            <img src="assets/img/icono-calendario.svg" alt="" class="icon iconCalendario">
+            <div class="animated divAgenda">
+                <p>¡Agendá la fecha en tu calendario!</p>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        AGENDAR EVENTO
+                    </button>
+                    <div class="dropdown-menu">
+                        <a target="_blank" id="LinkCalendarGoogle" class="dropdown-item" href="#">Google</a>
+                        <a target="_blank" id="LinkCalendarOutlook" class="dropdown-item" href="#">Outlook</a>
+                        <a target="_blank" id="LinkCalendarApple" class="dropdown-item" href="#">Apple</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Canciones -->
+    <section class="canciones">
+        <div class="container">
+            <img src="assets/img/icono-canciones.svg" alt="" class="icon iconMusic">
+            <div class="animated divCanciones">
+                <h4>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h4>
+                <p>¡Ayudanos sugiriendo las canciones que pensás que no pueden faltar en la fiesta!</p>
+                <a target="_blank" href="[ENLACE FORMULARIO CANCIONES]" class="btn">Sugerir canción</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Útil -->
+    <section class="alojamientos">
+        <div class="container">
+            <div class="animated divAlojamientos">
+                <h4>INFO ÚTIL</h4>
+                <p>Te dejamos sugerencias de alojamientos y traslados.</p>
+                <a data-fancybox data-src="#hidden-alojamientos" href="javascript:;" class="btn btn-alt">VER MÁS</a>
+                <div style="display: none;" id="hidden-alojamientos">
+                    <span class="title">Hoteles</span>
+                    <ul>
+                        <li><span style="font-weight: 600;">[Hotel 1]</span><br>[Teléfono, dirección]</li>
+                    </ul>
+                    <span class="title">Traslados</span>
+                    <ul>
+                        <li><span style="font-weight: 600;">[Traslado 1]</span><br>[Contacto]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gracias -->
+    <section class="gracias">
+        <div class="container animated divGracias">
+            <p>¡Gracias por acompañarnos en este momento tan importante!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <p>Joaco & Flor - 2026</p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        var fechaCuentaRegresiva = "[FECHA EVENTO]";
+        var fechaInicioEvento = "[FECHA INICIO]";
+        var fechaFinEvento = "[FECHA FIN]";
+        var tituloEvento = "Boda de Joaco y Flor";
+    </script>
+</body>
+</html>
