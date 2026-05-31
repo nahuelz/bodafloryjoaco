@@ -1,10 +1,7 @@
-version: '3.8'
-
 services:
   web:
     build: .
+    container_name: floryjoaco_web
     ports:
       - "8100:80"
-    volumes:
-      - .:/usr/share/nginx/html
     restart: unless-stopped
