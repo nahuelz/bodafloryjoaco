@@ -1006,4 +1006,39 @@ section.contacto ul li i{
     opacity: 1;
     transform: translateY(0);
   }
+} 
+
+.modal-confirmacion__mensaje.success-card {
+  margin-top: 20px;
+  padding: 25px 20px;
+  border-radius: 16px;
+  background: #f7f8f3;
+  color: #444444;
+  text-align: center;
+  border: 1px solid rgba(176, 189, 147, 0.35);
+}
+
+.modal-confirmacion__mensaje.success-card h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-primario);
+  margin-bottom: 15px;
+}
+
+.modal-confirmacion__mensaje.success-card p {
+  font-size: 15px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.modal-confirmacion__mensaje.success-card .firma-novios {
+  margin-top: 15px;
+  font-weight: 500;
+  color: var(--color-primario);
+}
+
+.modal-confirmacion__mensaje.success-card .btn {
+  margin-top: 15px;
 }

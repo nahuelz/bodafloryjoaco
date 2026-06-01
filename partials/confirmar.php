@@ -128,7 +128,7 @@
                 Enviar confirmación
             </button>
 
-            <p id="mensajeConfirmacion" class="modal-confirmacion__mensaje"></p>
+            <div id="mensajeConfirmacion" class="modal-confirmacion__mensaje"></div>
 
         </form>
     </div>

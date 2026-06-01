@@ -344,16 +344,42 @@ document.addEventListener("DOMContentLoaded", function () {
         body: JSON.stringify(datos),
       });
 
-      mensajeConfirmacion.textContent =
-        "¡Gracias! Tu confirmación fue enviada correctamente.";
-      mensajeConfirmacion.classList.add("ok");
+      const camposFormulario = formConfirmacion.querySelectorAll(
+        ".form-group, #btnEnviarConfirmacion"
+      );
+
+      camposFormulario.forEach(function (campo) {
+        campo.style.display = "none";
+      });
+
+      mensajeConfirmacion.className =
+        "modal-confirmacion__mensaje success-card";
+
+      mensajeConfirmacion.innerHTML = `
+        <h5>¡Confirmación recibida!</h5>
+        <p>Gracias por acompañarnos en este día tan especial.</p>
+        <p>Los esperamos para celebrar juntos.</p>
+        <p class="firma-novios">Flor & Joaco</p>
+        <button type="button" id="btnCerrarMensajeConfirmacion" class="btn">
+          Cerrar
+        </button>
+      `;
 
       formConfirmacion.reset();
 
-      setTimeout(function () {
-        cerrarModalConfirmacion();
-      }, 1800);
-    } catch (error) {
+      document
+        .getElementById("btnCerrarMensajeConfirmacion")
+        .addEventListener("click", function () {
+          cerrarModalConfirmacion();
+
+          camposFormulario.forEach(function (campo) {
+            campo.style.display = "";
+          });
+
+          mensajeConfirmacion.textContent = "";
+          mensajeConfirmacion.className = "modal-confirmacion__mensaje";
+        });
+          } catch (error) {
       console.error("Error enviando confirmación:", error);
 
       mensajeConfirmacion.textContent =
