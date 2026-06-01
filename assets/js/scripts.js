@@ -252,4 +252,116 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+}); 
+
+
+// ----------------------
+// Confirmación de asistencia
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btnAbrirConfirmacion = document.getElementById("btnAbrirConfirmacion");
+  const btnCerrarConfirmacion = document.getElementById("btnCerrarConfirmacion");
+  const modalConfirmacion = document.getElementById("modalConfirmacion");
+  const formConfirmacion = document.getElementById("formConfirmacion");
+  const mensajeConfirmacion = document.getElementById("mensajeConfirmacion");
+  const btnEnviarConfirmacion = document.getElementById("btnEnviarConfirmacion");
+
+  if (
+    !btnAbrirConfirmacion ||
+    !btnCerrarConfirmacion ||
+    !modalConfirmacion ||
+    !formConfirmacion ||
+    !mensajeConfirmacion ||
+    !btnEnviarConfirmacion
+  ) {
+    console.warn("No se encontraron todos los elementos del modal de confirmación.");
+    return;
+  }
+
+  function abrirModalConfirmacion() {
+    modalConfirmacion.classList.add("activo");
+  }
+
+  function cerrarModalConfirmacion() {
+    modalConfirmacion.classList.remove("activo");
+  }
+
+  btnAbrirConfirmacion.addEventListener("click", abrirModalConfirmacion);
+
+  btnCerrarConfirmacion.addEventListener("click", cerrarModalConfirmacion);
+
+  modalConfirmacion.addEventListener("click", function (event) {
+    if (event.target === modalConfirmacion) {
+      cerrarModalConfirmacion();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modalConfirmacion.classList.contains("activo")) {
+      cerrarModalConfirmacion();
+    }
+  });
+
+  formConfirmacion.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    mensajeConfirmacion.textContent = "";
+    mensajeConfirmacion.className = "modal-confirmacion__mensaje";
+
+    const datos = {
+      nombre: document.getElementById("nombreInvitado").value.trim(),
+      asistencia: document.getElementById("asistenciaInvitado").value,
+      cantidad: document.getElementById("cantidadInvitados").value,
+      restriccion: document.getElementById("restriccionAlimentaria").value.trim(),
+      mensaje: document.getElementById("mensajeInvitado").value.trim(),
+    };
+
+    if (!datos.nombre || !datos.asistencia || !datos.cantidad) {
+      mensajeConfirmacion.textContent = "Completá los campos obligatorios.";
+      mensajeConfirmacion.classList.add("error");
+      return;
+    }
+
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyzLL7wu32KPk6s_Z-siDY_-r8lB1MDgUDLORmu81O-zVEdwhuEmhNhdx5vlcATZZPL/exec";
+
+    if (GOOGLE_SCRIPT_URL === "PEGAR_ACA_URL_DE_GOOGLE_APPS_SCRIPT") {
+      console.log("Datos capturados correctamente:", datos);
+
+      mensajeConfirmacion.textContent =
+        "El formulario funciona. Falta conectar la URL de Google Sheets.";
+      mensajeConfirmacion.classList.add("ok");
+
+      return;
+    }
+
+    try {
+      btnEnviarConfirmacion.disabled = true;
+      btnEnviarConfirmacion.textContent = "Enviando...";
+
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(datos),
+      });
+
+      mensajeConfirmacion.textContent =
+        "¡Gracias! Tu confirmación fue enviada correctamente.";
+      mensajeConfirmacion.classList.add("ok");
+
+      formConfirmacion.reset();
+
+      setTimeout(function () {
+        cerrarModalConfirmacion();
+      }, 1800);
+    } catch (error) {
+      console.error("Error enviando confirmación:", error);
+
+      mensajeConfirmacion.textContent =
+        "No pudimos enviar la confirmación. Intentá nuevamente.";
+      mensajeConfirmacion.classList.add("error");
+    } finally {
+      btnEnviarConfirmacion.disabled = false;
+      btnEnviarConfirmacion.textContent = "Enviar confirmación";
+    }
+  });
 });

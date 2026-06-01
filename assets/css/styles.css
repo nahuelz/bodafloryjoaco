@@ -858,39 +858,152 @@ section.contacto ul li i{
 }
 
 
-
 /* ---------- */
-
 /* Medias queries */
 
 @media (max-width: 760px) {
 
-
-  .logo-portada img{
+  .logo-portada img {
     max-width: 85%;
     margin-bottom: 0%;
     margin-top: 0%;
   }
 
-  .logo-portada{
+  .logo-portada {
     text-align: center;
   }
 
-  section.parallax-confirmar{
+  section.parallax-confirmar {
     height: 750px;
-     }
+  }
 
-  section.ceremonia-fiesta .row .columna:nth-child(2){
+  section.ceremonia-fiesta .row .columna:nth-child(2) {
     margin-top: 0px;
   }
 
-  section.ceremonia-fiesta .row .columna.no-margin-top{
+  section.ceremonia-fiesta .row .columna.no-margin-top {
     margin-top: 0;
   }
 
-  section.menu-footer ul li{
+  section.menu-footer ul li {
     margin-top: 10px;
   }
 
+  .modal-confirmacion__contenido {
+    padding: 30px 22px;
+    max-width: 95%;
+  }
 
+  .modal-confirmacion__contenido h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+/* ---------- */
+/* Modal Confirmación de Asistencia - GLOBAL */
+
+.modal-confirmacion {
+  display: none !important;
+  position: fixed !important;
+  z-index: 99999 !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-confirmacion.activo {
+  display: flex !important;
+}
+
+.modal-confirmacion__contenido {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  animation: aparecerModal 0.25s ease;
+}
+
+.modal-confirmacion__contenido h4 {
+  margin-bottom: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.modal-confirmacion__texto {
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.modal-confirmacion__cerrar {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  color: #777777;
+}
+
+.modal-confirmacion .form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.modal-confirmacion label {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.modal-confirmacion .form-control {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.modal-confirmacion__btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.modal-confirmacion__mensaje {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.modal-confirmacion__mensaje.ok {
+  color: #6f8f5f;
+}
+
+.modal-confirmacion__mensaje.error {
+  color: #b94a48;
+}
+
+@keyframes aparecerModal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
