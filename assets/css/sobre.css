@@ -8,7 +8,22 @@ body.sobre-bloqueado {
     height: 100vh;
 }
 
-/* Overlay fullscreen */
+.sobre-overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+
+    background-image: url('../img/fondo-sobre.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay fullscreen
 .sobre-overlay {
     position: fixed;
     inset: 0;
@@ -19,7 +34,7 @@ body.sobre-bloqueado {
     justify-content: center;
     transition: opacity 0.8s ease, visibility 0.8s ease;
     perspective: 1200px;
-}
+}*/
 
 .sobre-overlay.abierto {
     opacity: 0;
@@ -32,11 +47,11 @@ body.sobre-bloqueado {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 46vh 1rem 1rem;
 }
 
 .sobre-titulo {
-    color: #f7f3ea;
+    color: #A66A3D;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-style: italic;
     font-size: clamp(1rem, 3vw, 1.4rem);
