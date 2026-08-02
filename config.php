@@ -3,8 +3,8 @@ $evento = [
     'titulo'              => 'Boda Flor y Joaco',
     'titulo_evento'       => 'Boda Flor y Joaco',
     'novios'              => 'Flor &amp; Joaco',
-    'portada_sobre'       => 'https://res.cloudinary.com/dvbhqr8nu/image/upload/v1776090541/momentia/events/cmnvismw000015u5bgf3yvwmi/portada/qyuf21yemu1dzqh3pclz.jpg',
-    'sello_sobre'         => 'https://res.cloudinary.com/dvbhqr8nu/image/upload/v1775942740/momentia/compositions/sobre/iw5xpmo9brtliqabvhle.png',
+    'portada_sobre'         => './assets/img/background-sobre.png',
+    'sello_sobre'         => './assets/img/sello.png',
     'fecha_inicio'        => '11/22/2026 19:00:00',
     'fecha_fin'           => '11/22/2026 23:59:00',
     'instagram_handle'    => '@bodafloryjoaco',
@@ -14,11 +14,11 @@ $evento = [
     'form_canciones'      => 'https://docs.google.com/forms/d/e/1FAIpQLSdx-rgnkGiTmXEdbE9mjW8X-RYHMivJfTrEOiS1js17lv6jQQ/viewform',
 
     'ceremonia' => [
-        'fecha'  => '22 de Noviembre',
-        'hora'   => '19:00 hs',
+        'fecha'  => '13 de Febrero',
+        'hora'   => '18:00 hs',
         'lugar'  => 'Iglesia Nuestra Señora del Carmen',
-        'ciudad' => 'Villa Allende, Córdoba.',
-        'mapa'   => 'https://goo.gl/maps/RcNhghscz1XGGymM8',
+        'ciudad' => 'Olavarria, Buenos Aires.',
+        'mapa'   => 'https://maps.app.goo.gl/Vv8RXsFfsY9x9nB6A',
     ],
 
     'fiesta' => [

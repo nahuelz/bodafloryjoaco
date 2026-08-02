@@ -15,6 +15,14 @@
     function abrirSobre() {
         sobre.classList.add('abriendo');
 
+        // Ocultar el cuerpo del sobre para que la carta se vea completa (solo OPCION 1 - imagen)
+        var esOpcionImagen = !!sobre.querySelector('.carta-inner-v1');
+        if (esOpcionImagen) {
+            setTimeout(function () {
+                sobre.classList.add('cuerpo-oculto');
+            }, 700);
+        }
+
         // Reproducir música (gesto del usuario => navegador lo permite)
         try {
             if (typeof playAudio === 'function') {

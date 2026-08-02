@@ -7,8 +7,15 @@
         <div id="sobre-click" class="sobre-main relative z-10 sobre-float" style="width: clamp(300px, 88vw, 420px);">
             <div class="relative" style="height: clamp(190px, 52vw, 260px);">
 
-                <!-- Carta interna -->
-                <div class="carta-inner absolute rounded-t-2xl overflow-hidden"
+
+                <!-- Carta interna OPCION 1
+                <div class="carta-inner carta-inner-v1 absolute rounded-t-2xl"
+                     style="left: clamp(16px, 4vw, 22px); right: clamp(16px, 4vw, 22px); top: 0px; z-index: 1; box-shadow: rgba(0, 0, 0, 0.2) 0px -8px 32px; border-top: 1px solid rgba(41, 41, 41, 0.145); border-left: 1px solid rgba(41, 41, 41, 0.082); border-right: 1px solid rgba(41, 41, 41, 0.082);">
+                    <img src="./assets/img/carta-interna.png" alt="" class="w-full rounded-t-2xl" style="display: block; height: auto;">
+                </div>-->
+
+                <!-- Carta interna OPCION 2 -->
+                <div class="carta-inner carta-inner-v2 absolute rounded-t-2xl overflow-hidden"
                      style="left: clamp(16px, 4vw, 22px); right: clamp(16px, 4vw, 22px); top: 0px; height: clamp(130px, 36vw, 175px); z-index: 1; background: linear-gradient(160deg, rgb(253, 252, 247) 0%, rgb(247, 243, 234) 100%); box-shadow: rgba(0, 0, 0, 0.2) 0px -8px 32px; border-top: 1px solid rgba(41, 41, 41, 0.145); border-left: 1px solid rgba(41, 41, 41, 0.082); border-right: 1px solid rgba(41, 41, 41, 0.082);">
                     <div class="absolute pointer-events-none" style="inset: 8px; border: 1px solid rgba(41, 41, 41, 0.094); border-radius: 6px;"></div>
                     <div class="flex flex-col items-center justify-center h-full px-8 text-center gap-2">
@@ -67,9 +74,9 @@
 
                     <!-- Sello -->
                     <div class="sello-wrapper absolute left-1/2 -translate-x-1/2 rounded-full"
-                         style="top: 36%; z-index: 5;">
+                         style="top: 22%; z-index: 5;">
                         <div class="sello-pulso rounded-full flex items-center justify-center relative overflow-hidden"
-                             style="width: clamp(56px, 15vw, 72px); height: clamp(56px, 15vw, 72px); background: transparent; box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 26px;">
+                             style="width: clamp(140px, 34vw, 160px); height: clamp(140px, 34vw, 160px); background: transparent;">
                             <img src="<?= $evento['sello_sobre'] ?>" alt="" aria-hidden="true" draggable="false" class="absolute inset-0 w-full h-full object-contain">
                         </div>
                     </div>

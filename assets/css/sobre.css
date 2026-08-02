@@ -8,6 +8,7 @@ body.sobre-bloqueado {
     height: 100vh;
 }
 
+
 .sobre-overlay{
     position: fixed;
     inset: 0;
@@ -21,6 +22,7 @@ body.sobre-bloqueado {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 
 /* Overlay fullscreen
@@ -47,7 +49,7 @@ body.sobre-bloqueado {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 46vh 1rem 1rem;
+    padding: 30vh 1rem 1rem;
 }
 
 .sobre-titulo {
@@ -102,6 +104,12 @@ body.sobre-bloqueado {
 
 .sobre-main.abriendo { animation: none; cursor: default; pointer-events: none; }
 
+.sobre-main.cuerpo-oculto .sobre-cuerpo {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
 /* La solapa superior rota hacia atrás */
 .sobre-main.abriendo .solapa-top {
     transform-origin: top center;
@@ -122,13 +130,25 @@ body.sobre-bloqueado {
     to { opacity: 0; transform: translateX(-50%) scale(1.5); }
 }
 
-/* La carta interna aparece y sube cuando se abre el sobre */
-.sobre-main.abriendo .carta-inner {
+/* La carta interna aparece y sube cuando se abre el sobre - OPCION 1 (imagen) */
+.sobre-main.abriendo .carta-inner-v1 {
     z-index: 6;
     animation: subir-carta 1.2s 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes subir-carta {
+    0%   { opacity: 0; transform: translateY(0); }
+    30%  { opacity: 1; }
+    100% { opacity: 1; transform: translateY(-220px); }
+}
+
+/* La carta interna aparece y sube cuando se abre el sobre - OPCION 2 (diseño original) */
+.sobre-main.abriendo .carta-inner-v2 {
+    z-index: 6;
+    animation: subir-carta-v2 1.2s 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes subir-carta-v2 {
     0%   { opacity: 0; transform: translateY(0); }
     30%  { opacity: 1; }
     100% { opacity: 1; transform: translateY(-160px); }

@@ -1,13 +1,3 @@
-// Instagram parallax
-$(".parallax-confirmar").parallax({
-  imageSrc: "https://agendalafecha.com/invitaciones/recursos/img/barcelona/moscu.jpg",
-});
-
-// Portada parallax
-$(".parallax-portada").parallax({
-  imageSrc: "https://agendalafecha.com/invitaciones/recursos/img/moscu/portada.jpg",
-});
-
 // ----------------------
 
 // Portada
