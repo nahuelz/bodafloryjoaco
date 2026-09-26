@@ -26,7 +26,7 @@ $evento = [
 
     'fiesta' => [
         'horario' => 'Después de la ceremonia',
-        'lugar'  => 'Salon Polo Sur',
+        'lugar'  => 'Salón Polo Sur',
         'ciudad' => 'Olavarría, Buenos Aires.',
         'mapa'   => 'https://maps.app.goo.gl/Vv8RXsFfsY9x9nB6A',
     ],
