@@ -16,8 +16,8 @@
     <!-- Listado de css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/styles.css?v=<?= filemtime(__DIR__ . '/../assets/css/styles.css') ?>">
+    <link rel="stylesheet" href="./assets/css/sobre.css?v=<?= filemtime(__DIR__ . '/../assets/css/sobre.css') ?>">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

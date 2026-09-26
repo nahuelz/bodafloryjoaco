@@ -79,6 +79,7 @@
                 <label for="cantidadInvitados">Cantidad de personas</label>
                 <input
                     type="number"
+                    inputmode="numeric"
                     id="cantidadInvitados"
                     name="cantidad"
                     class="form-control"
