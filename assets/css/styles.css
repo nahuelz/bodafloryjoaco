@@ -846,6 +846,8 @@ section.contacto ul li i{
   position: fixed;
   display: flex;
   right: 1rem;
+  bottom: 1rem;
+  z-index: 100000;
 }
 
 .hidden {
