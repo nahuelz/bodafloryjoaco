@@ -5,8 +5,8 @@ $evento = [
     'novios'              => 'Flor &amp; Joaco',
     'portada_sobre'         => './assets/img/background-sobre.png',
     'sello_sobre'         => './assets/img/sello.png',
-    'fecha_inicio'        => '11/22/2026 19:00:00',
-    'fecha_fin'           => '11/22/2026 23:59:00',
+    'fecha_inicio'        => '02/13/2027 19:00:00',
+    'fecha_fin'           => '02/13/2027 23:59:00',
     'instagram_handle'    => '@bodafloryjoaco',
     'instagram_url'       => 'https://www.instagram.com/bodafloryjoaco',
     'dress_code'          => 'Vestimenta formal, elegante',
@@ -15,17 +15,17 @@ $evento = [
 
     'ceremonia' => [
         'fecha'  => '13 de Febrero',
-        'hora'   => '18:00 hs',
-        'lugar'  => 'Iglesia Nuestra Señora del Carmen',
-        'ciudad' => 'Olavarria, Buenos Aires.',
+        'hora'   => '18:30 hs',
+        'lugar'  => 'Lago Polo Sur',
+        'ciudad' => 'Olavarría, Buenos Aires.',
         'mapa'   => 'https://maps.app.goo.gl/Vv8RXsFfsY9x9nB6A',
     ],
 
     'fiesta' => [
         'horario' => 'Después de la ceremonia',
-        'lugar'   => 'Rincón Calina',
-        'ciudad'  => 'Unquillo, Córdoba.',
-        'mapa'    => 'https://goo.gl/maps/SMuchjXPddgD6vFY6',
+        'lugar'  => 'Salon Polo Sur',
+        'ciudad' => 'Olavarría, Buenos Aires.',
+        'mapa'   => 'https://maps.app.goo.gl/Vv8RXsFfsY9x9nB6A',
     ],
 
     'galeria' => [
@@ -40,11 +40,11 @@ $evento = [
     ],
 
     'cbu' => [
-        'titular' => 'Nombre Apellido',
-        'cbu'     => '12345623561',
-        'alias'   => 'agenda.la.fecha',
-        'dni'     => '32200552',
-        'banco'   => 'Banco Galicia',
+        'titular' => 'Joaquin Perez',
+        'cbu'     => '0000003100076531932031',
+        'alias'   => 'bodafyj.mp',
+        'dni'     => '38825341',
+        'banco'   => 'Mercado Pago',
         'lista_regalos' => [
             ['nombre' => 'Falabella Novios', 'url' => '#'],
         ],
