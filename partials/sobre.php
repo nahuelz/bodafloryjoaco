@@ -19,7 +19,7 @@
                      style="left: clamp(16px, 4vw, 22px); right: clamp(16px, 4vw, 22px); top: 0px; height: clamp(130px, 36vw, 175px); z-index: 1; background: linear-gradient(160deg, rgb(253, 252, 247) 0%, rgb(247, 243, 234) 100%); box-shadow: rgba(0, 0, 0, 0.2) 0px -8px 32px; border-top: 1px solid rgba(41, 41, 41, 0.145); border-left: 1px solid rgba(41, 41, 41, 0.082); border-right: 1px solid rgba(41, 41, 41, 0.082);">
                     <div class="absolute pointer-events-none" style="inset: 8px; border: 1px solid rgba(41, 41, 41, 0.094); border-radius: 6px;"></div>
                     <div class="flex flex-col items-center justify-center h-full px-8 text-center gap-2">
-                        <p style="font-size: 8px; letter-spacing: 0.4em; text-transform: uppercase; color: rgb(15, 16, 52); opacity: 0.9; font-family: 'Cormorant Garamond', Georgia, serif;">Invitación a</p>
+                        <p style="font-size: 8px; letter-spacing: 0.4em; text-transform: uppercase; color: rgb(15, 16, 52); opacity: 0.9; font-family: 'Cormorant Garamond', Georgia, serif;">Invitación a boda</p>
                         <p style="font-size: clamp(1rem, 4vw, 1.5rem); color: rgb(15, 16, 52); font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 600; line-height: 1.2;"><?= $evento['novios'] ?></p>
                         <div style="width: 28px; height: 1px; background: rgb(15, 16, 52); opacity: 0.75; margin-top: 4px;"></div>
                     </div>
