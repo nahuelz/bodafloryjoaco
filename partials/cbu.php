@@ -9,22 +9,23 @@
             <!-- Datos Cbu -->
             <div style="display: none;" id="hidden-cbu">
 
-                <span class="title">Datos Bancarios</span>
+                <span class="title">Cuenta en pesos</span>
                 <ul>
-                    <li>Nombre del Titular: <?= $evento['cbu']['titular'] ?></li>
-                    <li>CBU: <?= $evento['cbu']['cbu'] ?></li>
-                    <li>Alias: <?= $evento['cbu']['alias'] ?></li>
-                    <li>DNI: <?= $evento['cbu']['dni'] ?></li>
-                    <li><?= $evento['cbu']['banco'] ?></li>
+                    <li>Nombre del Titular: <?= $evento['cbu']['pesos']['titular'] ?></li>
+                    <li>CBU: <?= $evento['cbu']['pesos']['cbu'] ?></li>
+                    <li>Alias: <?= $evento['cbu']['pesos']['alias'] ?></li>
+                    <li>CUIL: <?= $evento['cbu']['pesos']['dni'] ?></li>
+                    <li><?= $evento['cbu']['pesos']['banco'] ?></li>
                 </ul>
 
-                <span class="title">Lista de Regalos</span>
+                <span class="title">Cuenta en dólares</span>
                 <ul>
-                    <?php foreach ($evento['cbu']['lista_regalos'] as $regalo): ?>
-                        <li><a target="_blank" href="<?= $regalo['url'] ?>"><?= $regalo['nombre'] ?></a></li>
-                    <?php endforeach; ?>
+                    <li>Nombre del Titular: <?= $evento['cbu']['dolares']['titular'] ?></li>
+                    <li>CBU: <?= $evento['cbu']['dolares']['cbu'] ?></li>
+                    <li>Alias: <?= $evento['cbu']['dolares']['alias'] ?></li>
+                    <li>CUIL: <?= $evento['cbu']['dolares']['cuil'] ?></li>
+                    <li><?= $evento['cbu']['dolares']['banco'] ?></li>
                 </ul>
-
             </div>
         </div>
     </div>

@@ -549,12 +549,32 @@ section.dresscode h4 {
     color: white;
 }
 
+section.dresscode h5 {
+  margin-top: 15px;
+  color: white;
+}
+
+section.dresscode .dresscode-options {
+  justify-content: center;
+}
+
+section.dresscode .dresscode-option {
+  text-align: center;
+}
+
 section.dresscode p{
   color: white;
 }
 
 section.dresscode img.icon{
   width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 767px) {
+  section.dresscode .dresscode-option + .dresscode-option {
+    margin-top: 35px;
+  }
 }
 
 /* ---------- */
@@ -979,7 +999,6 @@ section.contacto ul li i{
 .modal-confirmacion .form-control {
   border-radius: 10px;
   border: 1px solid #dddddd;
-  padding: 10px 12px;
   font-size: 14px;
 }
 

@@ -255,6 +255,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const formConfirmacion = document.getElementById("formConfirmacion");
   const mensajeConfirmacion = document.getElementById("mensajeConfirmacion");
   const btnEnviarConfirmacion = document.getElementById("btnEnviarConfirmacion");
+  const cantidadInvitados = document.getElementById("cantidadInvitados");
+  const nombresInvitados = document.getElementById("nombresInvitados");
 
   if (
     !btnAbrirConfirmacion ||
@@ -262,11 +264,48 @@ document.addEventListener("DOMContentLoaded", function () {
     !modalConfirmacion ||
     !formConfirmacion ||
     !mensajeConfirmacion ||
-    !btnEnviarConfirmacion
+    !btnEnviarConfirmacion ||
+    !cantidadInvitados ||
+    !nombresInvitados
   ) {
     console.warn("No se encontraron todos los elementos del modal de confirmación.");
     return;
   }
+
+  function renderizarNombresInvitados() {
+    const nombresActuales = Array.from(
+      nombresInvitados.querySelectorAll(".nombre-invitado")
+    ).map(function (input) {
+      return input.value;
+    });
+    const cantidad = Math.max(1, parseInt(cantidadInvitados.value, 10) || 1);
+
+    nombresInvitados.replaceChildren();
+
+    for (let indice = 0; indice < cantidad; indice += 1) {
+      const grupo = document.createElement("div");
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      const numeroInvitado = indice + 1;
+
+      grupo.className = "form-group";
+      label.htmlFor = `nombreInvitado${numeroInvitado}`;
+      label.textContent = `Nombre y apellido del invitado ${numeroInvitado}`;
+      input.type = "text";
+      input.id = `nombreInvitado${numeroInvitado}`;
+      input.name = "nombres[]";
+      input.className = "form-control nombre-invitado";
+      input.placeholder = "Ej: Juan Pérez";
+      input.required = true;
+      input.value = nombresActuales[indice] || "";
+
+      grupo.append(label, input);
+      nombresInvitados.appendChild(grupo);
+    }
+  }
+
+  cantidadInvitados.addEventListener("input", renderizarNombresInvitados);
+  renderizarNombresInvitados();
 
   function abrirModalConfirmacion() {
     modalConfirmacion.classList.add("activo");
@@ -298,15 +337,22 @@ document.addEventListener("DOMContentLoaded", function () {
     mensajeConfirmacion.textContent = "";
     mensajeConfirmacion.className = "modal-confirmacion__mensaje";
 
+    const nombres = Array.from(
+      nombresInvitados.querySelectorAll(".nombre-invitado")
+    ).map(function (input) {
+      return input.value.trim();
+    });
+
     const datos = {
-      nombre: document.getElementById("nombreInvitado").value.trim(),
+      nombre: nombres.join(", "),
+      nombres: nombres,
       asistencia: document.getElementById("asistenciaInvitado").value,
       cantidad: document.getElementById("cantidadInvitados").value,
       restriccion: document.getElementById("restriccionAlimentaria").value.trim(),
       mensaje: document.getElementById("mensajeInvitado").value.trim(),
     };
 
-    if (!datos.nombre || !datos.asistencia || !datos.cantidad) {
+    if (nombres.some(function (nombre) { return !nombre; }) || !datos.asistencia || !datos.cantidad) {
       mensajeConfirmacion.textContent = "Completá los campos obligatorios.";
       mensajeConfirmacion.classList.add("error");
       return;
@@ -356,6 +402,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
 
       formConfirmacion.reset();
+      renderizarNombresInvitados();
 
       document
         .getElementById("btnCerrarMensajeConfirmacion")
@@ -369,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
           mensajeConfirmacion.textContent = "";
           mensajeConfirmacion.className = "modal-confirmacion__mensaje";
         });
-          } catch (error) {
+    } catch (error) {
       console.error("Error enviando confirmación:", error);
 
       mensajeConfirmacion.textContent =

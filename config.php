@@ -9,7 +9,10 @@ $evento = [
     'fecha_fin'           => '02/13/2027 23:59:00',
     'instagram_handle'    => '@bodafloryjoaco',
     'instagram_url'       => 'https://www.instagram.com/bodafloryjoaco',
-    'dress_code'          => 'Vestimenta formal, elegante',
+    'dress_code'          => [
+        'hombres' => 'Traje Elegante',
+        'mujeres' => 'Vestido Largo',
+    ],
     'form_asistencia'     => 'https://docs.google.com/forms/d/e/1FAIpQLSe9YQMx7pJ7roFnvzgB353ytHGRUEOI_339DoK6--8r9jtZwg/viewform?usp=sf_link',
     'form_canciones'      => 'https://docs.google.com/forms/d/e/1FAIpQLSdx-rgnkGiTmXEdbE9mjW8X-RYHMivJfTrEOiS1js17lv6jQQ/viewform',
 
@@ -40,13 +43,19 @@ $evento = [
     ],
 
     'cbu' => [
-        'titular' => 'Joaquin Perez',
-        'cbu'     => '0000003100076531932031',
-        'alias'   => 'bodafyj.mp',
-        'dni'     => '38825341',
-        'banco'   => 'Mercado Pago',
-        'lista_regalos' => [
-            ['nombre' => 'Falabella Novios', 'url' => '#'],
+        'pesos' => [
+            'titular' => 'Joaquin German Perez',
+            'cbu'     => '0000003100076531932031',
+            'alias'   => 'bodafyj.mp',
+            'dni'     => '38825341',
+            'banco'   => 'Mercado Pago',
+        ],
+        'dolares' => [
+            'titular' => 'Joaquin German Perez',
+            'cbu'     => '00701101-31004010286577',
+            'alias'   => 'bodafyj.usd',
+            'cuil'    => '20388253410',
+            'banco'   => 'Banco Galicia',
         ],
     ],
 

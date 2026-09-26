@@ -4,7 +4,9 @@
 
         <div class="animated divTitleAgenda">
             <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
-            <p>Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
+            <p>Esperamos que seas parte de esta gran celebración. ¡Por favor confirma tu asistencia antes del <strong>15/01/2027!</strong></p>
+            <p><i>Amamos a los peques, pero hemos diseñado esta celebración para que sea una noche de adultos.</p>
+            <p><i><strong>¡POR FAVOR ASISTIR SIN NIÑOS!</strong></i></p>
 
             <button type="button" id="btnAbrirConfirmacion" class="btn">
                 Confirmar asistencia
@@ -55,25 +57,9 @@
             ×
         </button>
 
-        <h4>Confirmá tu asistencia</h4>
-
-        <p class="modal-confirmacion__texto">
-            Nos encantaría compartir este día con vos. Completá tus datos para ayudarnos a organizarnos mejor.
-        </p>
+        <h6>Confirmá tu asistencia</h6>
 
         <form id="formConfirmacion">
-
-            <div class="form-group">
-                <label for="nombreInvitado">Nombre y apellido</label>
-                <input
-                    type="text"
-                    id="nombreInvitado"
-                    name="nombre"
-                    class="form-control"
-                    placeholder="Ej: Juan Pérez"
-                    required
-                >
-            </div>
 
             <div class="form-group">
                 <label for="asistenciaInvitado">¿Vas a asistir?</label>
@@ -96,11 +82,14 @@
                     id="cantidadInvitados"
                     name="cantidad"
                     class="form-control"
-                    min="1"
+                    min="0"
+                    max="5"
                     value="1"
                     required
                 >
             </div>
+
+            <div id="nombresInvitados"></div>
 
             <div class="form-group">
                 <label for="restriccionAlimentaria">Restricción alimentaria</label>
@@ -111,17 +100,6 @@
                     class="form-control"
                     placeholder="Ej: vegetariano, celíaco, ninguna"
                 >
-            </div>
-
-            <div class="form-group">
-                <label for="mensajeInvitado">Mensaje para los novios</label>
-                <textarea
-                    id="mensajeInvitado"
-                    name="mensaje"
-                    class="form-control"
-                    rows="3"
-                    placeholder="Dejales un mensajito si querés"
-                ></textarea>
             </div>
 
             <button type="submit" id="btnEnviarConfirmacion" class="btn modal-confirmacion__btn">
