@@ -77,17 +77,18 @@
 
             <div class="form-group">
                 <label for="cantidadInvitados">Cantidad de personas</label>
-                <input
-                    type="number"
-                    inputmode="numeric"
+                <select
                     id="cantidadInvitados"
                     name="cantidad"
                     class="form-control"
-                    min="0"
-                    max="5"
-                    value="1"
                     required
                 >
+                    <option value="1" selected>1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                </select>
             </div>
 
             <div id="nombresInvitados"></div>
