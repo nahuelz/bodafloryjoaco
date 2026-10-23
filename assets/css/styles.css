@@ -328,11 +328,18 @@ a:hover{
 
 /* Portada */
 section.portada{
-  height: 100vh;
+  height: auto;
+  min-height: 0;
+}
+
+.logo-portada {
+  width: 100%;
 }
 
  .logo-portada img{
-    max-width: 60%;
+    width: 100%;
+    height: auto;
+    display: block;
     }
 .fade-in-portada {
  text-align: center;
@@ -893,9 +900,7 @@ section.contacto ul li i{
 @media (max-width: 760px) {
 
   .logo-portada img {
-    max-width: 85%;
-    margin-bottom: 0%;
-    margin-top: 0%;
+    width: 100%;
   }
 
   .logo-portada {

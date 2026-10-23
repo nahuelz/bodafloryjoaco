@@ -3,7 +3,7 @@
 
     <!-- Logo central -->
     <div class="logo-portada fade-in-portada">
-        <img class="" src="./assets/img/logo-portada.png" alt="">
+        <img class="" src="./assets/img/logo-portada.png" alt="" width="4480" height="2520">
         <div class="scroll-down"></div>
     </div>
 
