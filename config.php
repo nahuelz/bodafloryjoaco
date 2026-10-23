@@ -1,7 +1,7 @@
 <?php
 $evento = [
-    'titulo'              => 'Boda Flor y Joaco',
-    'titulo_evento'       => 'Boda Flor y Joaco',
+    'titulo'              => 'Boda Florencia & Joaquin',
+    'titulo_evento'       => 'Boda Florencia & Joaquin',
     'novios'              => 'Flor &amp; Joaco',
     'portada_sobre'         => './assets/img/background-sobre.png',
     'sello_sobre'         => './assets/img/sello.png',

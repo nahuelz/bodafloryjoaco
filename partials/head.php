@@ -27,5 +27,8 @@
     <!-- Font Awesome -->
     <link href="./assets/css/all.min.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico?v=<?= filemtime(__DIR__ . '/../favicon.ico') ?>">
+
     <title><?= $evento['titulo'] ?></title>
 </head>
