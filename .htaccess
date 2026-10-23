@@ -1,0 +1,9 @@
+# No cachear el HTML/PHP (asi siempre trae los ?v= nuevos de los assets)
+<FilesMatch "\.(html?|php)$">
+  Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+
+# Cache largo para assets versionados con ?v=
+<FilesMatch "\.(css|js|png|jpg|jpeg|svg|webp|woff2?)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
