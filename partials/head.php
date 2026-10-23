@@ -3,8 +3,8 @@
 
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="invitaciones digitales para eventos">
-    <meta name="keywords" content="invitaciones, digitales, tarjetas, boda, invitación, interactivas, casamiento, save the date, agenda la fecha, ideas invitación, tarjetas de 15, tarjetas eventos, wedding, matrimonio, ideas tarjetas, rsvp, modelos de invitacion, página de boda, página web de casamiento">
+    <meta name="description" content="Invitación a la boda de Florencia & Joaquin">
+    <meta name="keywords" content="Invitación a la boda de Florencia & Joaquin">
 
     <!-- Tailwind (para el sobre de apertura) -->
     <script src="https://cdn.tailwindcss.com"></script>
