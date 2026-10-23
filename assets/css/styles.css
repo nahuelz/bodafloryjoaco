@@ -909,33 +909,15 @@ section.contacto ul li i{
 
 @media (max-width: 760px) {
 
+  .logo-portada img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .logo-portada {
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo-portada::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('../img/logo-portada.png');
-    background-size: cover;
-    background-position: center;
-    filter: blur(25px) brightness(0.7);
-    transform: scale(1.2);
-  }
-
-  .logo-portada img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-height: 90vh;
-    object-fit: contain;
   }
 
   section.parallax-confirmar {
