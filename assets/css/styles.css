@@ -473,6 +473,9 @@ section.galeria .item-galeria{
 section.galeria .item-galeria a img{
   transition: all 0.3s ease-out;
   border-radius: 10px;
+  width: 378px;
+  height: 378px;
+  object-fit: cover;
 }
 
 
