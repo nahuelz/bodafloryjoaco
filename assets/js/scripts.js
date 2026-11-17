@@ -349,7 +349,6 @@ document.addEventListener("DOMContentLoaded", function () {
       asistencia: document.getElementById("asistenciaInvitado").value,
       cantidad: document.getElementById("cantidadInvitados").value,
       restriccion: document.getElementById("restriccionAlimentaria").value.trim(),
-      mensaje: document.getElementById("mensajeInvitado").value.trim(),
     };
 
     if (nombres.some(function (nombre) { return !nombre; }) || !datos.asistencia || !datos.cantidad) {
