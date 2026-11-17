@@ -522,6 +522,7 @@ section.cbu{
   text-align: center;
   padding: 40px 0 70px;
   background-color:var(--color-primario);
+  font-family: 'Cinzel', serif;
 }
 
 section.cbu img.icon{
@@ -536,11 +537,12 @@ section.cbu p{
 #hidden-cbu{
   padding: 25px;
   border-radius: 10px;
+  font-family: 'Cinzel', serif;
 }
 
 
 #hidden-cbu span.title{
-  font-family: 'Edwardian Script', cursive;
+  font-family: 'Cinzel', serif;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -572,7 +574,12 @@ section.cbu p{
 section.parallax-confirmar{
   text-align: center;
     height: 600px;
+  font-family: 'Cinzel', serif;
  }
+
+section.parallax-confirmar h3{
+  font-family: 'Edwardian Script', cursive;
+}
 
 section.parallax-confirmar .container img.icon{
   width: 150px;
@@ -974,6 +981,14 @@ section.contacto ul li i{
     font-size: 20px;
     letter-spacing: 2px;
   }
+
+  section.canciones h3 {
+    font-size: 45px;
+  }
+
+  section.parallax-confirmar h3 {
+    font-size: 45px;
+  }
 }
 
 /* ---------- */
@@ -983,6 +998,7 @@ section.contacto ul li i{
   display: none !important;
   position: fixed !important;
   z-index: 99999 !important;
+  font-family: 'Cinzel', serif;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1093,7 +1109,7 @@ section.contacto ul li i{
 }
 
 .modal-confirmacion__mensaje.success-card h5 {
-  font-family: 'Edwardian Script', cursive;
+  font-family: 'Cinzel', serif;
   font-size: 20px;
   letter-spacing: 2px;
   color: var(--color-primario);
