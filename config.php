@@ -60,9 +60,9 @@ $evento = [
     ],
 
     'alojamientos' => [
-        ['nombre' => 'Alojamiento 1', 'info' => 'telefono, direccion', 'url' => 'https://www.google.com/maps'],
-        ['nombre' => 'Alojamiento 2', 'info' => 'telefono, direccion', 'url' => 'https://www.google.com/maps'],
-        ['nombre' => 'Alojamiento 2', 'info' => 'telefono, direccion', 'url' => 'https://www.google.com/maps'],
+        ['nombre' => 'Cominotto Gestiones Inmobiliarias', 'info' => '2284 595059', 'url' => 'https://www.instagram.com/cominottogestioninmobiliaria/'],
+        ['nombre' => 'Hotel Santa Rosa', 'info' => '2284 304451', 'url' => 'https://www.hotelsantarosa.com/'],
+        ['nombre' => 'Apart Hotel Demetrio', 'info' => '2284 423491, direccion', 'url' => 'https://www.hoteldemetrio.com.ar/'],
     ],
 
     'traslados' => [

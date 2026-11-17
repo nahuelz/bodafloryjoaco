@@ -741,6 +741,7 @@ section.alojamientos p{
 #hidden-alojamientos{
   padding: 25px;
   border-radius: 10px;
+  font-family: 'Cinzel', serif;
 }
 
 
@@ -750,7 +751,7 @@ section.alojamientos p{
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 
