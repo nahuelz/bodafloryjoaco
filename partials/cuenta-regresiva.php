@@ -1,7 +1,7 @@
 <!-- Cuenta Regresiva -->
 <section class="cuenta-regresiva" id="cuenta-regresiva">
     <div class="container">
-        <p class="m-3">Bienvenidos a nuestra boda</p>
+        <p class="m-3" style="font-size: 35px">Bienvenidos a nuestra boda</p>
         <p id="reloj" class="descartar">¡Hoy es el gran día!</p>
         <div class="row justify-content-center margenSup" id="reloj_number">
             <div class="col-md-1 col-2 d-flex flex-column justify-content-center p-0">

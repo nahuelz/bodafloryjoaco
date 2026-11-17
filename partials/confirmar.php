@@ -3,8 +3,8 @@
     <div class="container">
 
         <div class="animated divTitleAgenda">
-            <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
-            <p>Esperamos que seas parte de esta gran celebración. ¡Por favor confirma tu asistencia antes del <strong>15/01/2027!</strong></p>
+            <h3>Confirmación de asistencia</h3>
+            <p>Esperamos que seas parte de esta gran celebración. ¡Por favor confirmá tu asistencia antes del <strong>15/01/2027!</strong></p>
             <p><i>Amamos a los peques, pero hemos diseñado esta celebración para que sea una noche de adultos.</p>
             <p><i><strong>¡POR FAVOR ASISTIR SIN NIÑOS!</strong></i></p>
 

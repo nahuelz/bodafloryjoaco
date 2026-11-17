@@ -1,7 +1,7 @@
 <!-- Galeria -->
 <section class="galeria">
     <div class="container">
-        <h4 class="title-galery">NOSOTROS...</h4>
+        <h3 class="title-galery" style="text-align: center; !important;">Nosotros...</h3>
         <div class="row">
             <?php foreach ($evento['galeria'] as $img): ?>
                 <?php

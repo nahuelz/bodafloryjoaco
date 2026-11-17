@@ -5,7 +5,7 @@
 
         <br>
         <div class="animated divIntagram">
-            <span class="hashtag">
+            <span class="hashtag" style="font-size: 45px !important;letter-spacing: 3px; !important;">
                 <?= $evento['instagram_handle'] ?>
             </span>
             <p>

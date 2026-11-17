@@ -55,7 +55,7 @@ body.sobre-bloqueado {
 
 .sobre-titulo {
     color: #A66A3D;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Cinzel', serif;
     font-style: italic;
     font-size: clamp(1rem, 3vw, 1.4rem);
     letter-spacing: 0.08em;

@@ -2,7 +2,7 @@
 $evento = [
     'titulo'              => 'Boda Florencia & Joaquin',
     'titulo_evento'       => 'Boda Florencia & Joaquin',
-    'novios'              => 'Flor &amp; Joaco',
+    'novios'              => 'Flor y Joaco',
     'portada_sobre'         => './assets/img/background-sobre.png',
     'sello_sobre'         => './assets/img/sello.png',
     'fecha_inicio'        => '02/13/2027 19:00:00',

@@ -12,9 +12,7 @@
                         <?= $evento['ceremonia']['hora'] ?> <br>
                         <?= $evento['ceremonia']['lugar'] ?><br>
                         <?= $evento['ceremonia']['ciudad'] ?><br>
-                        Recibí debajo las indicaciones para llegar.
                     </p>
-                    <a target="_blank" href="<?= $evento['ceremonia']['mapa'] ?>" class="btn">LLEGAR A LA CEREMONIA</a>
                 </div>
             </div>
             <!-- Fiesta -->
@@ -27,11 +25,16 @@
                         <?= $evento['fiesta']['lugar'] ?><br>
                         <?= $evento['fiesta']['ciudad'] ?><br>
                         ¡Te esperamos!
+                        <br>
                     </p>
-                    <a target="_blank" href="<?= $evento['fiesta']['mapa'] ?>" class="btn">LLEGAR A LA FIESTA</a>
                 </div>
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a target="_blank" href="<?= $evento['ceremonia']['mapa'] ?>" class="btn">CÓMO LLEGAR</a>
+            </div>
         </div>
     </div>
 </section>

@@ -2,7 +2,7 @@
 <section class="alojamientos">
     <div class="container">
         <div class="animated divAlojamientos">
-            <h4>INFO ÚTIL</h4>
+            <h3 style="color: white !important;">Info útil</h3>
             <p>Te dejamos sugerencias de alojamientos y traslados para que aproveches ese fin de semana al máximo.</p>
 
             <a data-fancybox="" data-src="#hidden-alojamientos" href="javascript:;" data-options="{&quot;touch&quot; : false}" class="btn btn-alt">VER MÁS</a>
