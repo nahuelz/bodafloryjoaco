@@ -14,7 +14,7 @@ $evento = [
         'mujeres' => 'Vestido Largo',
     ],
     'form_asistencia'     => 'https://docs.google.com/forms/d/e/1FAIpQLSe9YQMx7pJ7roFnvzgB353ytHGRUEOI_339DoK6--8r9jtZwg/viewform?usp=sf_link',
-    'form_canciones'      => 'https://docs.google.com/forms/d/e/1FAIpQLSdx-rgnkGiTmXEdbE9mjW8X-RYHMivJfTrEOiS1js17lv6jQQ/viewform',
+    'form_canciones'      => 'https://open.spotify.com/playlist/3sfeLxlho8LlK6hGD2OHru?si=-JuQsd2YSjm0-m5XYTBSdA&utm_source=whatsapp&pi=qDLVWbdGQYiwC',
 
     'ceremonia' => [
         'fecha'  => '13 de Febrero',
