@@ -7,21 +7,39 @@
     <meta name="description" content="13 de febrero de 2027. ¡Nos casamos! Queremos compartir este día tan especial con vos.">
     <meta name="keywords" content="Invitación a la boda de Flor & Joaco">
 
+    <?php
+    $esHorizontal = ($_GET['vista'] ?? '') === 'horizontal';
+
+    $preview = $esHorizontal
+        ? 'preview-horizontal.jpg'
+        : 'preview.jpg';
+
+    $previewPath = __DIR__ . '/../' . $preview;
+
+    $previewVersion = filemtime($previewPath);
+
+    $previewUrl = 'https://bodafloryjoaco.com.ar/' . $preview . '?v=' . $previewVersion;
+
+    $urlActual = 'https://bodafloryjoaco.com.ar/' .
+        ($esHorizontal ? '?vista=horizontal' : '');
+    ?>
+
 
     <!-- Open Graph / WhatsApp -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bodafloryjoaco.com.ar/">
+    <meta property="og:url" content="<?= htmlspecialchars($urlActual) ?>">
     <meta property="og:locale" content="es_AR">
 
     <meta property="og:title" content="¡Nos casamos! Flor & Joaco">
     <meta property="og:description" content="13 de febrero de 2027. ¡Te esperamos para compartir este día tan especial!">
 
-    <meta property="og:image" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
-    <meta property="og:image:secure_url" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($previewUrl) ?>">
+    <meta property="og:image:secure_url" content="<?= htmlspecialchars($previewUrl) ?>">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
+    <meta property="og:image:height" content="<?= $esHorizontal ? '630' : '1200' ?>">
     <meta property="og:image:alt" content="Invitación de boda de Flor y Joaco">
+
 
 
     <!-- Tailwind (para el sobre de apertura) -->
