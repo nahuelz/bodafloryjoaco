@@ -405,9 +405,9 @@ section.audio .columna {
 section.cuenta-regresiva{
   font-family: 'Edwardian Script', cursive !important;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
   background-color:var(--color-secundario);
-  height: 250px;
+  height: 320px;
 }
 
 section.cuenta-regresiva p{
