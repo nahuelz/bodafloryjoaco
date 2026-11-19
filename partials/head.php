@@ -7,6 +7,7 @@
     <meta name="description" content="13 de febrero de 2027. ¡Nos casamos! Queremos compartir este día tan especial con vos.">
     <meta name="keywords" content="Invitación a la boda de Flor & Joaco">
 
+
     <!-- Open Graph / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bodafloryjoaco.com.ar/">
@@ -16,7 +17,7 @@
     <meta property="og:description" content="13 de febrero de 2027. ¡Te esperamos para compartir este día tan especial!">
 
     <meta property="og:image" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
-    <meta property="og:image:secure_url" content="https://bodafloryjoaco.com.ar/preview.jpg">
+    <meta property="og:image:secure_url" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="1200">
