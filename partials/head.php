@@ -10,7 +10,7 @@
     <!-- Open Graph / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bodafloryjoaco.com.ar/">
-    <meta property="og:title" content="¡Nos casamos! Florencia & Joaquín 💍">
+    <meta property="og:title" content="¡Nos casamos! Flor & Joaco 💍">
     <meta property="og:description" content="13 de febrero de 2027. Queremos compartir este día tan especial con vos.">
 
     <meta property="og:image" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
