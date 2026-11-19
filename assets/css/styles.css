@@ -745,13 +745,13 @@ section.alojamientos p{
 }
 
 
-#hidden-alojamientos span.title{
+#hidden-alojamientos h4.title{
   font-family: 'Edwardian Script', cursive;
   color: var(--color-primario);
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-size: 35px;
+
 }
 
 

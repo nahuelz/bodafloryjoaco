@@ -33,12 +33,12 @@ $evento = [
 
     'galeria' => [
         './assets/img/1.jpg',
-        './assets/img/2.jpg',
+        ['src' => './assets/img/2.jpg', 'pos' => '75% center'],
         './assets/img/3.jpg',
-        './assets/img/4.jpg',
+        ['src' => './assets/img/4.jpg', 'pos' => '10% center'],
         './assets/img/5.jpg',
-        './assets/img/6.jpg',
-        './assets/img/7.jpg',
+        ['src' => './assets/img/6.jpg', 'pos' => '85% center'],
+        ['src' => './assets/img/7.jpg', 'pos' => '85% center'],
         './assets/img/8.jpg',
     ],
 
@@ -60,15 +60,12 @@ $evento = [
     ],
 
     'alojamientos' => [
-        ['nombre' => 'Cominotto Gestiones Inmobiliarias', 'info' => '2284 595059', 'url' => 'https://www.instagram.com/cominottogestioninmobiliaria/'],
-        ['nombre' => 'Hotel Santa Rosa', 'info' => '2284 304451', 'url' => 'https://www.hotelsantarosa.com/'],
-        ['nombre' => 'Apart Hotel Demetrio', 'info' => '2284 423491, direccion', 'url' => 'https://www.hoteldemetrio.com.ar/'],
+        ['nombre' => 'GUÍA DE HOSPEDAJES PARA INVITADOS', 'info' => '', 'url' => 'https://docs.google.com/spreadsheets/d/1f41qBeH3FwGa_5cnqoe-coE35_O7C6fp/edit?gid=1035360929#gid=1035360929'],
     ],
 
     'traslados' => [
-        ['nombre' => 'Nombre 1', 'info' => 'Contacto', 'url' => 'https://www.google.com/maps'],
-        ['nombre' => 'Nombre 2', 'info' => 'Contacto', 'url' => 'https://www.google.com/maps'],
-        ['nombre' => 'Nombre 2', 'info' => 'Contacto', 'url' => 'https://www.google.com/maps'],
+        ['nombre' => 'Eco Remis', 'info' => '2284 425656', 'url' => 'https://play.google.com/store/apps/details?id=com.maker.apper.ecoremis&hl=es_AR'],
+        ['nombre' => 'UBER', 'info' => '', 'url' => 'https://play.google.com/store/apps/details?id=com.ubercab&hl=es_AR'],
     ],
 
     'calendarios' => [
