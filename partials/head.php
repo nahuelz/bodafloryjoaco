@@ -3,8 +3,21 @@
 
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Invitación a la boda de Florencia & Joaquin">
-    <meta name="keywords" content="Invitación a la boda de Florencia & Joaquin">
+    <!-- SEO -->
+    <meta name="description" content="13 de febrero de 2027. ¡Nos casamos! Queremos compartir este día tan especial con vos.">
+    <meta name="keywords" content="Invitación a la boda de Flor & Joaco">
+
+    <!-- Open Graph / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bodafloryjoaco.com.ar/">
+    <meta property="og:title" content="¡Nos casamos! Florencia & Joaquín 💍">
+    <meta property="og:description" content="13 de febrero de 2027. Queremos compartir este día tan especial con vos.">
+
+    <meta property="og:image" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Invitación de boda de Florencia y Joaquín">
+
 
     <!-- Tailwind (para el sobre de apertura) -->
     <script src="https://cdn.tailwindcss.com"></script>

@@ -1,6 +1,6 @@
 <?php
 $evento = [
-    'titulo'              => 'Boda Florencia & Joaquin',
+    'titulo'              => 'Boda Flor & Joaco',
     'titulo_evento'       => 'Boda Florencia & Joaquin',
     'novios'              => 'Flor y Joaco',
     'portada_sobre'         => './assets/img/background-sobre.png',
@@ -38,7 +38,7 @@ $evento = [
         ['src' => './assets/img/4.jpg', 'pos' => '10% center'],
         './assets/img/5.jpg',
         ['src' => './assets/img/6.jpg', 'pos' => '85% center'],
-        ['src' => './assets/img/7.jpg', 'pos' => '85% center'],
+        ['src' => './assets/img/7.jpg', 'pos' => '87% center'],
         './assets/img/8.jpg',
     ],
 
