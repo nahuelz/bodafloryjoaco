@@ -16,7 +16,7 @@
     <meta property="og:image" content="https://bodafloryjoaco.com.ar/preview.jpg?v=<?= filemtime(__DIR__ . '/../preview.jpg') ?>">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Invitación de boda de Florencia y Joaquín">
+    <meta property="og:image:alt" content="Invitación de boda de Flor y Joaco">
 
 
     <!-- Tailwind (para el sobre de apertura) -->
